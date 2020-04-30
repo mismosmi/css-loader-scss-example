@@ -1,0 +1,18 @@
+.xc_test {
+    width: 100%;
+    &__subclass {
+        height: 100%;
+    }
+
+    &--modifier {
+        display: block;
+    }
+
+    :global(.rc-slider) {
+        visibility: visible;
+    }
+}
+
+:export {
+    someProp: '14px';
+}
