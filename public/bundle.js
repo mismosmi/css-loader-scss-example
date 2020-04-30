@@ -105,7 +105,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tes
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\nmodule.exports = {\"someProp\":\"'14px'\",\"xc_test\":\"xc_1n-iEUxUS_tPouy58c9mNY\"};\n\n//# sourceURL=webpack:///./test.module.scss?");
+eval("// extracted by mini-css-extract-plugin\nmodule.exports = {\"someProp\":\"'14px'\",\"xc_test\":\"_1n-iEUxUS_tPouy58c9mNY\"};\n\n//# sourceURL=webpack:///./test.module.scss?");
 
 /***/ }),
 

@@ -23,7 +23,7 @@ const config = {
     module: {
         rules: [
             {
-                test: /\.module\.(css|scss|sass)$/,
+                test: /\.(css|scss|sass)$/,
                 use: [
                     MiniCssExtractPlugin.loader,
                     {
@@ -32,6 +32,7 @@ const config = {
                             sourceMap: false,
                             importLoaders: 1,
                             esModule: true,
+                            modules: { auto: true },
                         },
                     },
                     {
@@ -40,12 +41,6 @@ const config = {
                             parser: 'postcss-scss',
                             plugins: () => [
                                 autoprefixer,
-                                postcssLocal(),
-                                postcssModules({
-                                    generateScopedName: genericNames('xc_[hash:base64]', {
-                                        context: process.cwd(),
-                                    }),
-                                }),
                             ],
                         },
                     },
