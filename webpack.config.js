@@ -1,9 +1,3 @@
-/**
- * =============================================================================
- *  Copyright (c) 2017-18 excentos Software GmbH, Potsdam, Germany.
- *  All rights reserved. Do not redistribute. Strictly confidential.
- * =============================================================================
- */
 /* eslint-disable */
 
 const fs = require('fs');
