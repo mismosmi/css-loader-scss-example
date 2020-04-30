@@ -1,7 +1,10 @@
+$height: 15px;
 .xc_test {
+    $no-value-class: #{&}--no-value;
+
     width: 100%;
     &__subclass {
-        height: 100%;
+        height: $height;
     }
 
     &--modifier {

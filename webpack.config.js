@@ -7,6 +7,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const postcssModules = require('postcss-modules-scope');
 const postcssLocal = require('postcss-modules-local-by-default');
 const genericNames = require('generic-names');
+const autoprefixer = require('autoprefixer');
 
 const BUILD_DIR = path.resolve(__dirname, './public');
 
@@ -38,6 +39,7 @@ const config = {
                         options: {
                             parser: 'postcss-scss',
                             plugins: () => [
+                                autoprefixer,
                                 postcssLocal(),
                                 postcssModules({
                                     generateScopedName: genericNames('xc_[hash:base64]', {
